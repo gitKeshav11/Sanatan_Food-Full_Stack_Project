@@ -246,7 +246,6 @@ Services:
 ---
 
 ## 👨‍💻 Author & Contributors
-
 <a href="https://github.com/gitKeshav11/Sanatan_Food-Full_Stack_Project/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=gitKeshav11/Sanatan_Food-Full_Stack_Project" />
 </a>
