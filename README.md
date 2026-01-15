@@ -264,7 +264,7 @@ Services:
 🔗 LinkedIn: [Jyoti Singh](https://www.linkedin.com/in/jyotisinghje/)  
 🐙 GitHub: [Jyotisingh133](https://github.com/Jyotisingh133)  
 
----
+--------------------------------------------------------------------------
 
 ## 🌿 Vision
 
