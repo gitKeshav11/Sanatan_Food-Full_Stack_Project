@@ -2,7 +2,7 @@
 # 🍽️ Sanatan Food – Full Stack Food Ordering Platform
 
 <p align="center">
-  <img src="frontend-react/assets/sanatan-food-banner.png" alt="Sanatan Food Banner" width="100%" />
+  <img src="assets/sanatan-food-banner.png" alt="Sanatan Food Banner" width="100%" />
 </p>
 
 <p align="center">
