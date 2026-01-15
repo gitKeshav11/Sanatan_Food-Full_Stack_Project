@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Source.iml" filepath="$PROJECT_DIR$/.idea/Source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend-spring boot/sanatan-food.iml" filepath="$PROJECT_DIR$/backend-spring boot/sanatan-food.iml" />
+    </modules>
+  </component>
+</project>

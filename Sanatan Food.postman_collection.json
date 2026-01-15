@@ -1,0 +1,1029 @@
+{
+	"info": {
+		"_postman_id": "49f4914b-ab91-4409-b80e-d4c39a648bb8",
+		"name": "Sanatan Food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25460319"
+	},
+	"item": [
+		{
+			"name": "Restaurant Service",
+			"item": [
+				{
+					"name": "create restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"name\": \"Sanatan Food\",\r\n    \"description\": \"Description of the restaurant\",\r\n    \"cuisineType\": \"Indian\",\r\n    \"address\": {\r\n        \"streetAddress\": \"321 Main Street\",\r\n        \"city\": \"Ahemdabad\",\r\n        \"stateProvince\": \"Gujrat\",\r\n        \"postalCode\": \"12345\",\r\n        \"country\": \"india\"\r\n    },\r\n    \"contactInformation\": {\r\n        \"email\": \"sanatanfood@gmail.com\",\r\n        \"mobile\": \"123-456-7890\",\r\n        \"twitter\": \"@sanatan_twitter\",\r\n        \"instagram\": \"@sanatan_instagram\"\r\n    },\r\n    \"openingHours\": \"Mon-Sun: 9:00 AM - 9:00 PM\",\r\n    \"imageUrl\": \"https://cdn.pixabay.com/photo/2014/12/15/14/05/salad-569156_640.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}api/admin/restaurant",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"admin",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all restaurants",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5454/api/restaurants",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get users restaurants",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5454/api/admin/restaurants/user",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"admin",
+								"restaurants",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update restaurant status",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/restaurant/2/add-favorites",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"restaurant",
+								"2",
+								"add-favorites"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Service",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"Super Admin\",\r\n    \"email\":\"superadmin4@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"role\":\"SUPER_ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}auth/signup",
+							"host": [
+								"{{BASE_URL}}auth"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"pablo1@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}auth/signin",
+							"host": [
+								"{{BASE_URL}}auth"
+							],
+							"path": [
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDgxNDE4NDQsImV4cCI6MTcwODIyODI0NCwiZW1haWwiOiJyYWp1MUBnbWFpbC5jb20iLCJhdXRob3JpdGllcyI6IiJ9.Hd6lvurx4suMV0kUQuTVfKtgw4sWbymG5oUssG5ussGsmCARpftp4wd83HKoKcWg_v41z5f6gdFKTRhIUlV9bw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/users/profile",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/users/profile",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ingredients",
+			"item": [
+				{
+					"name": "get ingredients of restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5454/api/admin/ingredients/restaurant/2",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"admin",
+								"ingredients",
+								"restaurant",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all ingredients of foodItem",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5454/api/admin/ingredients/food/16",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"admin",
+								"ingredients",
+								"food",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create ingredient category",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get all ingredient category",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Service",
+			"item": [
+				{
+					"name": "create order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"restaurantId\":6,\r\n    \"deliveryAddress\":{\r\n    \"fullName\":\"ashok\",\r\n    \"streetAddress\":\"gujrath\",\r\n    \"city\":\"gujrath\",\r\n    \"state\":\"gujrath\",\r\n    \"postalCode\":\"599000\",\r\n    \"country\":\"India\"\r\n    }\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5454/api/order",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find restaurants order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5454/api/admin/order/restaurant/2",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"admin",
+								"order",
+								"restaurant",
+								"2"
+							],
+							"query": [
+								{
+									"key": "order_status",
+									"value": "PENDING",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}api/order/1/CONFIRMED",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"order",
+								"1",
+								"CONFIRMED"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "create menu",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n          \r\n          \"name\": \"Dosaa\", \r\n          \"description\": \"Rice,Sambar,papad\", \r\n          \"price\": 399.9, \r\n          \"foodCategory\":  \"Meals\",\r\n          \"imageUrl\": \"https://media.istockphoto.com/id/1460788317/photo/south-indian-vegetarian-breakfast.webp?b=1&s=612x612&w=0&k=20&c=Y85m3OnJrowADnlL9eBjPm1Je11d-t6qoCvjhjCC0dk=\", \r\n          \"restaurantId\":6,\r\n          \r\n          \"vegetarian\": true, \r\n          \"seasonal\": true, \r\n          \"categoryId\":57,\r\n        \r\n          \"quantity\": 10,\r\n          \"ingredients\":[\r\n              {\r\n              \"categoryName\":\"Bread\",\r\n              \"ingredientName\":\"White Bread\"\r\n              \r\n          },\r\n          {\r\n              \"categoryName\":\"Bread\",\r\n              \"ingredientName\":\"Wheat Bread\"\r\n              \r\n          },\r\n          {\r\n              \"categoryName\":\"Sauce\",\r\n              \"ingredientName\":\"Tomato Sauce\"\r\n              \r\n          },\r\n          {\r\n              \"categoryName\":\"Sauce\",\r\n              \"ingredientName\":\"Onion Sauce\"\r\n              \r\n          }\r\n          \r\n         \r\n          ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}api/admin/menu",
+					"host": [
+						"{{BASE_URL}}api"
+					],
+					"path": [
+						"admin",
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Item To cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"menuItemId\":5,\r\n    \"quantity\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}api/cart/add",
+					"host": [
+						"{{BASE_URL}}api"
+					],
+					"path": [
+						"cart",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find foods by restaurant id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}api/menu/restaurant/6?vegetarian=false&seasonal=false&food_category=",
+					"host": [
+						"{{BASE_URL}}api"
+					],
+					"path": [
+						"menu",
+						"restaurant",
+						"6"
+					],
+					"query": [
+						{
+							"key": "vegetarian",
+							"value": "false"
+						},
+						{
+							"key": "seasonal",
+							"value": "false"
+						},
+						{
+							"key": "food_category",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Item To Cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"menuItemId\":\"\",\r\n    \"quantity\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}api/cart/add",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"cart",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find user cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5454/api/cart/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"cart",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/order/user",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"order",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5454/api/menu/search?name=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"menu",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update cartItem",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\":8,\r\n    \"cartItemId\":9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5454/api/cart-item/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"cart-item",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove CartItemId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/cart-item/9/remove",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"cart-item",
+								"9",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/customers",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get pendding-customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/pending-customers",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"pending-customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find restaurant by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/restaurant/2",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"restaurant",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/admin/restaurant/2/status",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"admin",
+								"restaurant",
+								"2",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create events",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image\":\"https://images.pexels.com/photos/5778892/pexels-photo-5778892.jpeg?auto=compress&cs=tinysrgb&w=600\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5454/api/admin/events/restaurant/2",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"admin",
+								"events",
+								"restaurant",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all events",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5454/api/admin/events/restaurant/2",
+							"host": [
+								"localhost"
+							],
+							"port": "5454",
+							"path": [
+								"api",
+								"admin",
+								"events",
+								"restaurant",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all category of restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/admin/category/restaurant/6",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"admin",
+								"category",
+								"restaurant",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clear cart",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "delete food",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}api/admin/menu/2",
+							"host": [
+								"{{BASE_URL}}api"
+							],
+							"path": [
+								"admin",
+								"menu",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
