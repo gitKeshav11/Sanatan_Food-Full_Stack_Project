@@ -13,11 +13,6 @@
   <img src="https://img.shields.io/badge/JWT-Security-red?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge"/>
 </p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&pause=1000&color=E91E63&center=true&vCenter=true&width=1000&lines=Sanatan+Food+🍽️;Full+Stack+Food+Ordering+Platform;Spring+Boot+%7C+React+%7C+MySQL;JWT+Security+%7C+Docker+%7C+Clean+Architecture;Production+Ready+Project" />
-</p>
-
 ---
 
 ## 🚀 Project Overview
