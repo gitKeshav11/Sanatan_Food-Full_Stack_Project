@@ -249,16 +249,22 @@ Services:
 
 ---
 
-## 👨‍💻 Authors
+## 👨‍💻 Author & Contributors
+## 📞 Contact
 
-### Keshav Upadhyay  
-Backend Developer (Java & Spring Boot)
+### **Keshav Upadhyay**  
+**Role:** Backend Developer (Java & Spring Boot)  
+📧 Email: [keshavupadhyayje@gmail.com](mailto:keshavupadhyayje@gmail.com)  
+🔗 LinkedIn: [Keshav Upadhyay](https://www.linkedin.com/in/keshavupadhyayje/)  
+🐙 GitHub: [gitKeshav11](https://github.com/gitKeshav11)  
 
-### Jyoti Singh  
-Frontend Support / Collaborator
+### **Jyoti Singh**  
+**Role:** Frontend Support / Collaborator  
+📧 Email: [kumarijyotije@gmail.com](mailto:kumarijyotije@gmail.com)  
+🔗 LinkedIn: [Jyoti Singh](https://www.linkedin.com/in/jyotisinghje/)  
+🐙 GitHub: [Jyotisingh133](https://github.com/Jyotisingh133)  
 
 ---
-
 ## 🌿 Vision
 
 **Sanatan Food** aims to blend **modern technology with traditional values**, delivering a clean, scalable, and meaningful digital food platform.
