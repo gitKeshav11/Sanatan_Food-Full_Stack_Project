@@ -13,7 +13,6 @@
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge"/>
 </p>
 
-
 ## 🚀 Project Overview
 
 **Sanatan Food** is a **complete full‑stack food ordering and restaurant management platform** designed using **real‑world backend and frontend practices**.
