@@ -83,7 +83,6 @@ It follows **clean architecture**, **role‑based access**, and is **production�
 - Analytics & insights
 
 ---
-
 ## 🛠️ Tech Stack
 ### Backend
 - Java 17
