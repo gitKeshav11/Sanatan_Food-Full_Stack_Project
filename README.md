@@ -27,7 +27,6 @@ It follows **clean architecture**, **role‑based access**, and is **production�
 ---
 
 ## 🌟 Key Highlights
-
 ✔ Full Stack Architecture (Frontend + Backend)  
 ✔ Role Based Access (Customer / Admin / Super Admin)  
 ✔ Secure JWT Authentication  
