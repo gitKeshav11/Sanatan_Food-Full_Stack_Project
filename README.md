@@ -108,7 +108,6 @@ It follows **clean architecture**, **role‑based access**, and is **production�
 ---
 
 ## 📁 Actual Backend Project Structure
-
 ```text
 backend-spring-boot/
 ├── src/main/java/com/sanatan
