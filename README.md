@@ -68,7 +68,6 @@ It follows **clean architecture**, **role‑based access**, and is **production�
 ```
 
 ---
-
 ## 👥 User Roles & Permissions
 
 ### 👤 Customer
