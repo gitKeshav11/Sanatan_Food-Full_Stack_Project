@@ -169,7 +169,6 @@ FRONTEND-REACT/
 ---
 
 ## ⚙️ Local Setup
-
 ### Backend
 
 ```bash
