@@ -90,7 +90,6 @@ It follows **clean architecture**, **role‑based access**, and is **production�
 ---
 
 ## 🛠️ Tech Stack
-
 ### Backend
 - Java 17
 - Spring Boot
