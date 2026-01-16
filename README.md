@@ -295,7 +295,6 @@ Services:
 
 ## 🌿 Vision
 
-
 **Sanatan Food** aims to blend **modern technology with traditional values**, delivering a clean, scalable, and meaningful digital food platform.
 
 -----
