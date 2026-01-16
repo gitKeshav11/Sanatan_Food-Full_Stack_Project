@@ -117,20 +117,28 @@ It follows **clean architecture**, **role‑based access**, and is **production�
 
 ---
 
-## 📁 Backend Project Structure
+## 📁 Actual Backend Project Structure
 
 ```text
 backend-spring-boot/
-├── controller
-├── service
-├── repository
-├── model
-├── dto
-├── request
-├── response
-├── exception
-├── config
-└── SanatanFoodApplication.java
+├── src/main/java/com/sanatan
+│   ├── config        # Configuration classes
+│   ├── controller    # REST Controllers
+│   ├── domain        # Core domain logic
+│   ├── dto           # Data Transfer Objects
+│   ├── exception     # Custom exception handling
+│   ├── model         # JPA Entities
+│   ├── repository    # Data access layer
+│   ├── request       # API request models
+│   ├── response      # API response models
+│   ├── service       # Business logic
+│   └── SanatanFoodApplication.java
+│
+├── src/main/resources
+│   └── application.properties
+│
+├── pom.xml
+└── README.md
 ```
 
 ---
@@ -170,9 +178,6 @@ FRONTEND-REACT/
 ├── .gitignore
 └── README.md
 ```
-
----
-
 
 ---
 
