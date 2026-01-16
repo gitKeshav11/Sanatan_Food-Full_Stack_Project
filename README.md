@@ -130,7 +130,6 @@ backend-spring-boot/
 ```
 
 ---
-
 ## 📁 Actual Frontend File Structure
 
 ```text
