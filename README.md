@@ -209,7 +209,6 @@ Login → JWT Token Generated → Stored on Client → Sent in Authorization Hea
 ✔ Stateless authentication  
 
 ---
-
 ## 📦 Docker & Docker‑Compose
 
 ### Run Entire Project
