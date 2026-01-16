@@ -35,7 +35,6 @@ It follows **clean architecture**, **role‑based access**, and is **production�
 ✔ Scalable & Cloud‑ready  
 
 ---
-
 ## 🧠 System Architecture Flow
 
 ```text
