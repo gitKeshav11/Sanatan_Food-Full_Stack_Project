@@ -209,7 +209,6 @@ Login → JWT Token Generated → Stored on Client → Sent in Authorization Hea
 
 ---
 ## 📦 Docker & Docker‑Compose
-
 ### Run Entire Project
 
 ```bash
