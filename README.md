@@ -135,21 +135,44 @@ backend-spring-boot/
 
 ---
 
-## 📁 Frontend Project Structure
+## 📁 Actual Frontend File Structure
 
 ```text
-src/
-├── Admin
-├── SuperAdmin
-├── customers
-├── Routers
-├── State
-├── config
-├── theme
-│   └── DarkTheme.js
-├── App.js
-└── index.js
+FRONTEND-REACT/
+├── node_modules/
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── Admin/            # Admin dashboard pages & components
+│   ├── SuperAdmin/       # Super Admin specific controls & views
+│   ├── customers/        # Customer-facing pages (home, cart, orders)
+│   │
+│   ├── config/           # App-level configuration (API URLs, constants)
+│   ├── Data/             # Static / mock data files
+│   ├── Routers/          # React Router configuration
+│   ├── State/            # Global state management (context / store)
+│   ├── theme/            # Theme setup
+│   │   └── DarkTheme.js  # Dark mode configuration
+│   │
+│   ├── App.js            # Root application component
+│   ├── App.css           # App-level styles
+│   ├── App.test.js       # App tests
+│   ├── index.js          # Application entry point
+│   ├── index.css         # Global styles
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+│
+├── tailwind.config.js    # Tailwind CSS configuration
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
 ```
+
+---
+
 
 ---
 
