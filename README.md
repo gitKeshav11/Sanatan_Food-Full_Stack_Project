@@ -3,7 +3,6 @@
 <p align="center">
   <img src="assets/sanatan-food-banner.png" alt="Sanatan Food Banner" width="100%" />
 </p>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Spring%20Boot-Backend-success?style=for-the-badge"/>
