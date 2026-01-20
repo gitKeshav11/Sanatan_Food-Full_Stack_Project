@@ -274,8 +274,7 @@ Services:
 🔗 LinkedIn: [Jyoti Singh](https://www.linkedin.com/in/jyotisinghje/)  
 🐙 GitHub: [Jyotisingh133](https://github.com/Jyotisingh133)  
 
---------------------------------------------------------------------------
-## 🌿 Vision
+-----
 **Sanatan Food** aims to blend **modern technology with traditional values**, delivering a clean, scalable, and meaningful digital food platform.
 
 
