@@ -253,7 +253,6 @@ Services:
 4. Push to Branch
 5. Open Pull Request
 ```
-
 ---
 ## 👨‍💻 Author & Contributors
 <a href="https://github.com/gitKeshav11/Sanatan_Food-Full_Stack_Project/graphs/contributors">
