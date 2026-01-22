@@ -260,7 +260,6 @@ Services:
   <img src="https://contrib.rocks/image?repo=gitKeshav11/Sanatan_Food-Full_Stack_Project" />
 </a>
 
-
 ## 📞 Contact
 ### **Keshav Upadhyay**  
 **Role:** Backend Developer (Java & Spring Boot)  
