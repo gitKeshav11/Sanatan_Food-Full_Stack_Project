@@ -34,6 +34,7 @@ It follows **clean architecture**, **role‑based access**, and is **production�
 ✔ Docker & Docker‑Compose support  
 ✔ Scalable & Cloud‑ready  
 
+
 ---
 ## 🧠 System Architecture Flow
 
