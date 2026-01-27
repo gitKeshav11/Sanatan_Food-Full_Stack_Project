@@ -1,6 +1,4 @@
-
 # 🍽️ Sanatan Food – Full Stack Food Ordering Platform
-
 
 
 <p align="center">
