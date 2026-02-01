@@ -19,6 +19,7 @@
 
 
 
+
 ## 🚀 Project Overview
 **Sanatan Food** is a **complete full‑stack food ordering and restaurant management platform** designed using **real‑world backend and frontend practices**.
 
